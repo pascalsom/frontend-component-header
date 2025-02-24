@@ -31,17 +31,6 @@ const AuthenticatedUserDropdown = ({ intl, username }) => {
         <a href={`${getConfig().LMS_BASE_URL}/dashboard`} className="pgn__dropdown-item dropdown-item h-desktop">My Courses</a>
         <a href={`${getConfig().LMS_BASE_URL}/courses`} className="pgn__dropdown-item dropdown-item h-desktop">Discover</a>
         {dashboardMenuItem}
-        <Dropdown.Item href={`${getConfig().ACCOUNT_PROFILE_URL}/u/${username}`}>
-          {intl.formatMessage(messages.profile)}
-        </Dropdown.Item>
-        <Dropdown.Item href={getConfig().ACCOUNT_SETTINGS_URL}>
-          {intl.formatMessage(messages.account)}
-        </Dropdown.Item>
-        { getConfig().ORDER_HISTORY_URL && (
-        <Dropdown.Item href={getConfig().ORDER_HISTORY_URL}>
-          {intl.formatMessage(messages.orderHistory)}
-        </Dropdown.Item>
-        )}
         <Dropdown.Item href={getConfig().LOGOUT_URL}>
           {intl.formatMessage(messages.signOut)}
         </Dropdown.Item>
