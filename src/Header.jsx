@@ -55,16 +55,6 @@ const Header = ({ intl }) => {
     },
     {
       type: 'item',
-      href: `${config.ACCOUNT_PROFILE_URL}/u/${authenticatedUser.username}`,
-      content: intl.formatMessage(messages['header.user.menu.profile']),
-    },
-    {
-      type: 'item',
-      href: config.ACCOUNT_SETTINGS_URL,
-      content: intl.formatMessage(messages['header.user.menu.account.settings']),
-    },
-    {
-      type: 'item',
       href: config.LOGOUT_URL,
       content: intl.formatMessage(messages['header.user.menu.logout']),
     },
@@ -91,7 +81,7 @@ const Header = ({ intl }) => {
   const props = {
     logo: config.LOGO_URL,
     logoAltText: config.SITE_NAME,
-    logoDestination: `${config.LMS_BASE_URL}/dashboard`,
+    logoDestination: `${config.LMS_BASE_URL}/`,
     loggedIn: authenticatedUser !== null,
     username: authenticatedUser !== null ? authenticatedUser.username : null,
     avatar: authenticatedUser !== null ? authenticatedUser.avatar : null,
