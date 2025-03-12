@@ -68,7 +68,7 @@ const Header = ({
       },
       {
         type: 'item',
-        href: 'https://neontoservices.ciamlogin.com/neontoservices.onmicrosoft.com/oauth2/v2.0/logout?post_logout_redirect_uri=https://academy2.neonto.de/logout',
+        href: `https://neontoservices.ciamlogin.com/neontoservices.onmicrosoft.com/oauth2/v2.0/logout?post_logout_redirect_uri=${getConfig().LMS_BASE_URL}/logout`,
         content: intl.formatMessage(messages['header.user.menu.logout']),
       },
     ],
