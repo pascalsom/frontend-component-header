@@ -31,7 +31,7 @@ const AuthenticatedUserDropdown = ({ intl, username }) => {
         <a href={`${getConfig().LMS_BASE_URL}/dashboard`} className="pgn__dropdown-item dropdown-item h-desktop">My Courses</a>
         <a href={`${getConfig().LMS_BASE_URL}/courses`} className="pgn__dropdown-item dropdown-item h-desktop">Discover</a>
         {dashboardMenuItem}
-        <Dropdown.Item href={getConfig().LOGOUT_URL}>
+        <Dropdown.Item href={'https://neontoservices.ciamlogin.com/neontoservices.onmicrosoft.com/oauth2/v2.0/logout?post_logout_redirect_uri=https://academy2.neonto.de/logout\''}>
           {intl.formatMessage(messages.signOut)}
         </Dropdown.Item>
       </Dropdown.Menu>
