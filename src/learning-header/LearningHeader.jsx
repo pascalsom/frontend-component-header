@@ -44,7 +44,6 @@ const LearningHeader = ({
             </a>
           </div>
         </div>
-        <ThemeToggleButton />
         {showUserDropdown && authenticatedUser && (
         <AuthenticatedUserDropdown
           username={authenticatedUser.username}
